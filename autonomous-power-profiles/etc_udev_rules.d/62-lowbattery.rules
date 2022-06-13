@@ -1,0 +1,2 @@
+# Rule for when switching to low battery
+SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", ATTR{capacity_level}=="Low", RUN+="/usr/share/power-profiles/power-saver.sh"

@@ -1,0 +1,2 @@
+# Rule for when switching to battery
+SUBSYSTEM=="power_supply",ATTR{status}=="Discharging",ATTR{capacity_level}=="Normal",RUN+="/usr/share/power-profiles/balanced.sh"

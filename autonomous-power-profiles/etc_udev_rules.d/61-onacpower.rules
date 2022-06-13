@@ -1,0 +1,2 @@
+# Rule for when switching to AC Power
+SUBSYSTEM=="power_supply", ATTR{online}=="1", RUN+="/usr/share/power-profiles/performance.sh"
